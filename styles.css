@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+:root{--accent:#0d6efd;--bg:#0b0e12;--soft:#f5f6f8;--text:#0f172a}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:var(--text)}
+.navbar{box-shadow:0 2px 20px rgba(0,0,0,.25)}
+.hero{background:linear-gradient(135deg,#111 0%,#222 50%,#111 100%)}
+.hero .btn{border-radius:999px}
+.product-card{border:none;box-shadow:0 10px 30px rgba(16,24,40,.08);transition:transform .2s ease,box-shadow .2s ease}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(16,24,40,.12)}
+.product-card .card-img-top{height:180px;object-fit:cover;border-top-left-radius:.75rem;border-top-right-radius:.75rem}
+.price{color:var(--accent)}
+table.table{border-radius:.75rem;overflow:hidden}
+footer{box-shadow:0 -2px 20px rgba(0,0,0,.15)}
+.card{border:none;box-shadow:0 10px 30px rgba(16,24,40,.08)}
+.form-control{border-radius:.6rem}
+.btn{border-radius:.6rem}
