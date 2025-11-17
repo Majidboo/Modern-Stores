@@ -3,7 +3,7 @@ $dbHost = getenv('DB_HOST') ?: '127.0.0.1';
 $dbUser = getenv('DB_USER') ?: 'root';
 $dbPass = getenv('DB_PASS') ?: '';
 $dbName = getenv('DB_NAME') ?: 'store';
-$dbPort = (int)(getenv('DB_PORT') ?: 3306);
+$dbPort = (int)(getenv('DB_PORT') ?: 8080);
 
 $pdoServer = new PDO('mysql:host=' . $dbHost . ';port=' . $dbPort . ';charset=utf8mb4', $dbUser, $dbPass, [
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -87,4 +87,5 @@ if ($countProducts === 0) {
     ['Sketchbook','Thick paper, lay-flat binding.',22.00,'https://picsum.photos/seed/sketchbook/600/400']
   ];
   foreach ($data as $d) $stmt->execute($d);
+
 }
